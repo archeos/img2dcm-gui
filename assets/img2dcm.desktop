@@ -1,0 +1,12 @@
+# see http://standards.freedesktop.org/desktop-entry-spec/latest/
+
+[Desktop Entry]
+Type=Application
+#Version=0.1a
+Name=img2dcm-gui
+Comment=Convert various image formats to DICOM format
+#Icon= should live in the assets dir
+Exec=img2dcm-gui
+MimeType=image/jpeg; image/tiff; image/png; image/bmp;
+Categories=Graphics;ImageProcessing;MedicalSoftware;
+StartupNotify=true
