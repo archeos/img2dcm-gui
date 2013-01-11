@@ -1,3 +1,24 @@
 #!/usr/bin/env python
 
-#main script 
+"""
+The main script.
+
+It contains only the event loop
+"""
+
+import signal
+import sys
+
+from PyQt4 import QtGui
+
+import gui.main
+
+def main():
+	Qt_app = QtGui.QApplication(sys.argv)
+	sys.exit(Qt_app.exec_()) 
+
+if __name__ == '__main__':
+	# this signal handle ctrl+c, for debug purpose only
+	signal.signal(signal.SIGINT, signal.SIG_DFL)
+	main()
+
